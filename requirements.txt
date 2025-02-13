@@ -1,6 +1,4 @@
 langchain
-pandas
-numpy
 tiktoken
 langchain_community
 bs4

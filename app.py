@@ -10,7 +10,6 @@ im=Image.open("E:/export/utilities/Import.png")
 executor = execute()
 # Set up the page layout
 st.set_page_config(page_title="Export Assistance AI", layout="wide",page_icon=im)
-st.markdown('<style>' + open('E:/export/style.css').read() + '</style>', unsafe_allow_html=True)
 hide_default_format = """
     <style>
     #MainMenu {visibility: hidden; }

@@ -5,6 +5,7 @@ bs4
 requests
 groq
 torch
+python-dotenv
 transformers
 sentence_transformers
 langchain_groq
@@ -12,6 +13,8 @@ pypdf
 tavily-python
 lxml
 chromadb
+PIL
 langchain-huggingface
 streamlit
+nest_asyncio
 langchain-chroma

@@ -6,7 +6,7 @@ from main import execute
 from PIL import Image
 
 
-im=Image.open("E:\\export\\utilities\\Import.png")
+im=Image.open("utilities\Import.png")
 executor = execute()
 # Set up the page layout
 st.set_page_config(page_title="Export Assistance AI", layout="wide",page_icon=im)

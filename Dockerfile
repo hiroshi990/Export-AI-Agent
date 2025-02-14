@@ -44,8 +44,9 @@ USER appuser
 # Copy the source code into the container.
 COPY . .
 
+COPY utilities/Import.png /app/utilities/Import.png
 # Expose the port that the application listens on.
 EXPOSE 8501
 
 # Run the application.
-CMD streamlit run app.py
+CMD ["streamlit", "run", "app.py"]

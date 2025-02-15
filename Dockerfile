@@ -30,6 +30,13 @@ RUN adduser \
     --uid "${UID}" \
     appuser
 
+# Create a writable cache directory for the non-privileged user
+RUN mkdir -p /home/appuser/.cache && chown -R appuser:appuser /home/appuser/.cache
+
+# Set the TRANSFORMERS_CACHE environment variable to the writable cache directory
+ENV TRANSFORMERS_CACHE=/home/appuser/.cache
+
+
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.
 # Leverage a bind mount to requirements.txt to avoid having to copy them into
@@ -43,8 +50,6 @@ USER appuser
 
 # Copy the source code into the container.
 COPY . .
-
-COPY utilities/Import.png /app/utilities/Import.png
 # Expose the port that the application listens on.
 EXPOSE 8501
 

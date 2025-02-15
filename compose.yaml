@@ -9,8 +9,9 @@
 # https://github.com/docker/awesome-compose
 services:
   server:
-    build:
-      context: .
+    build: .
+    env_file:
+      - .env 
     ports:
       - 8501:8501
 

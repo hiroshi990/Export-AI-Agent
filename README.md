@@ -7,13 +7,20 @@ Export Assistance AI is an intelligent assistant designed to help businesses and
 - **AI-Powered Recommendations**: Suggests the best products for export to the USA and Europe.
 - **Export Compliance Guidance**: Provides insights on regulations, compliance, and legal requirements.
 - **Market Strategy Optimization**: Helps businesses develop marketing strategies for effective trade.
-- **Supplier & Logistics Support**: Assists in establishing relationships with suppliers and logistics providers.
+- **Chat memory functionality**: Agent is equipped to keep track of previous conversations and remember context.
 - **Interactive Chat Interface**: Enables users to ask questions about export procedures, compliance, and strategies.
 
 ## Technologies Used
 
 - **Streamlit**: Used for creating the interactive web interface.
+- **Tools**: Agent is equipped with a custom retriever tool which is **RAG(Retrieval-Augmented Generation)** based
+  and a tavily search tool to access internet to get real time information like currency exchange rates etc.
+- **ChromaDB**: ChromaDB vector store to store documents embeddings.
+- **LLM** : Agent utilizes **llamallama3-8b-8192** groq model for faster responses and low latency.
+- **React-based Agent**: The agent is a React(Reason + Act) agent. What is the ReACT agent model?
+  The ReACT (Reasoning and Action) agent model is a framework designed to integrate the reasoning capabilities of large language models (LLMs) with the ability to take        actionable steps, creating a more sophisticated system that can understand and process information, evaluate situations, take appropriate actions, communicate responses,    and track ongoing situations.
 - **Docker**: Enables easy deployment and containerization.
+  
 
 ## Prerequisites
 
@@ -22,6 +29,20 @@ Ensure you have the following installed before proceeding:
 - [Docker](https://www.docker.com/get-started) (for running the app in a container)
 - [Python 3.8+](https://www.python.org/downloads/) (if running locally)
 - Dependencies listed in `requirements.txt`
+
+## App UI images:
+### Chatbot Interface:
+
+![Export Assistance AI UI](images/frontend1.png)
+
+![Export Assistance AI UI](images/frontend2.png)
+
+### Chat history:
+
+![Export Assistance AI UI](images/frontend3.png)
+
+
+
 
 ## Installation & Setup
 ### Running Locally (Without Docker)

@@ -19,6 +19,9 @@ Export Assistance AI is an intelligent assistant designed to help businesses and
 - **LLM** : Agent utilizes **llamallama3-8b-8192** groq model for faster responses and low latency.
 - **React-based Agent**: The agent is a React(Reason + Act) agent. What is the ReACT agent model?
   The ReACT (Reasoning and Action) agent model is a framework designed to integrate the reasoning capabilities of large language models (LLMs) with the ability to take        actionable steps, creating a more sophisticated system that can understand and process information, evaluate situations, take appropriate actions, communicate responses,    and track ongoing situations.
+  
+  ![React description im](images/react-description.png)
+  
 - **Docker**: Enables easy deployment and containerization.
   
 

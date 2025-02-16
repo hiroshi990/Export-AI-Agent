@@ -24,6 +24,21 @@ Ensure you have the following installed before proceeding:
 - Dependencies listed in `requirements.txt`
 
 ## Installation & Setup
+### Running Locally (Without Docker)
+If you prefer to run the project on your local machine without Docker, follow these steps:
+1. Clone the repository:
+   
+   ```bash
+   git clone https://github.com/hiroshi990/Export-AI-Agent.git
+   cd Export-AI-Agent
+2. Install the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+3. Run the application:
+
+   ```bash
+   streamlit run app.py
 
 ### Running with Docker (Recommended)
 
@@ -89,4 +104,3 @@ Ensure you have the following installed before proceeding:
 ```bash
 docker build -t export-assistance-ai .
 docker run -d -p 8501:8501 export-assistance-ai
-                   
